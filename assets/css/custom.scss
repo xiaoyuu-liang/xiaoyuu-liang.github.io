@@ -1,3 +1,6 @@
+---
+---
+
 .page__content {
   max-width: 1280px !important;        
   width: auto !important;
@@ -6,8 +9,34 @@
   padding-right: 1rem !important;
 }
 
-.pagination .pagination--pager svg {
-  width: 0.75em;  
-  height: 0.75em;
-  vertical-align: middle;
+.pagination {
+  margin-top: 2rem;
+  font-size: 0.8rem;        // 缩小字体
+  padding: 0 1rem;
+}
+
+.pagination--pager {
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  background-color: #f3f3f368;
+  color: #333;
+  text-decoration: none;
+}
+
+.pagination--pager:hover {
+  background-color: #e0e0e04c;
+}
+
+.pagination--pager.disabled {
+  color: #aaa;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.pagination--pager.left {
+  justify-self: flex-start;
+}
+
+.pagination--pager.right {
+  justify-self: flex-end;
 }
