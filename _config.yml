@@ -233,6 +233,10 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+  - scope:
+      path: ""
+    values:
+      custom_css: "assets/css/custom.scss"
   # _posts
   - scope:
       path: ""
