@@ -17,4 +17,4 @@ The included PDF summarizes five major categories:
 - **Transformation-based Defenses**: Applying input transformations (e.g., denoising, compression) to remove perturbations.
 - **Certified Defenses**: Providing provable robustness guarantees against bounded perturbations.
 
-👉 You can download the full summary [here](/files/Adversarial_Defense.pdf).
+📄 [Download slides overviewing adversarial defenses](/files/Adversarial_Defense_on_Graph.pdf) [here](/files/Adversarial_Defense.pdf).

@@ -16,6 +16,11 @@ Additionally, I describe my own approach, **CiDer**, which is a black-box method
 
 ---
 
-📄 [Download slides overviewing graph adversarial defenses (PDF)](/files/Adversarial_Defense_on_Graph.pdf)
+📄 [Download slides overviewing graph adversarial defenses](/files/Adversarial_Defense_on_Graph.pdf)
 
 📘 [Read the full CiDer paper (INFOCOM 2025)](https://xiaoyuu-liang.github.io/files/infocom2025.pdf)
+
+---
+**Reference**
+
+> Liang, Xiaoyu, Haohua Du, Wen Ma, Ye Tian, and Xiaoya Xu. "CiDer: A Black-box Approach to Classify Node with Certified Robustness Guarantees." In IEEE INFOCOM 2025-IEEE Conference on Computer Communications, 2025.
