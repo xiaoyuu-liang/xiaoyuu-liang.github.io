@@ -15,4 +15,4 @@ My research focuses on **Trustworthy AI**, including topics such as robustness a
 
 ## News
 
-- **Sep 2025**. I am starting as a visiting student at UCL (University College London)!
+- **Sep 2025**. 🏛️ I am starting as a visiting student at UCL (University College London)!
