@@ -14,3 +14,5 @@ My research focuses on **Trustworthy AI**, including topics such as robustness a
 🧐 I am actively looking for PhD opportunities starting in **Fall 2026**.
 
 ## News
+
+- **Sep 2025**. I am starting as a visiting student at UCL (University College London)!
