@@ -40,3 +40,16 @@
 .pagination--pager.right {
   justify-self: flex-end;
 }
+
+.sidebar-map .mmv-container {
+  width: 100%;
+  max-width: 260px;
+  height: 200px;
+  margin: 0.5rem auto;
+}
+
+.sidebar-map .mmv-container iframe,
+.sidebar-map .mmv-container > div {
+  width: 100% !important;
+  height: 100% !important;
+}
