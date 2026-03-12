@@ -7,14 +7,14 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "Beijing/China" # e.g. "America/New_York", "Europe/London", "Asia/Shanghai"
+locale                   : "London/UK" # e.g. "America/New_York", "Europe/London", "Asia/Shanghai"
 site_theme               : "default"
 title                    : "Xiaoyu Liang"
 title_separator          : "-"
 name                     : &name "Xiaoyu Liang"
 description              : &description "Xiaoyu Joy Liang's personal website"
 url                      : https://xiaoyuu-liang.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "/" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "github.com/xiaoyuu-liang"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "Xiaoyu Joy Liang" # Your name, e.g. "John Snow"
   pronouns         : "she/her" # example: "she/her"  
-  bio              : "Master student at Beihang University." # A short bio, e.g. "John Snow is a graduate student at the University of Winterfell."
-  location         : "Beijing, China" # e.g. "New York, NY"
-  employer         : "Beihang University"
+  bio              : "Mphil/PhD student @ UCL" # A short bio, e.g. "John Snow is a graduate student at the University of Winterfell."
+  location         : "London, UK" # e.g. "New York, NY"
+  employer         : "University College London"
   uri              : "https://xiaoyuu-liang.github.io" # Your personal website, e.g. "https://johnsnow.com"
-  email            : "liangjoyuu@gmail.com" 
+  email            : "xiaoyu.liang@ucl.ac.uk" 
 
   # Academic websites
   academia         : # URL
