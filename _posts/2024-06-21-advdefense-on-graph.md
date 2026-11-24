@@ -1,5 +1,5 @@
 ---
-title: 'Adversarial Defenses on Graph: Heuristic and Certified'
+title: 'Slide - Adversarial Defenses on Graph: Heuristic and Certified'
 date: 2024-06-21
 permalink: /posts/2024/06/adv-defense-on-graph/
 tags:

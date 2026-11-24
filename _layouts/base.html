@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{% if page.url == "/" %}{% assign doc_title = site.author.name %}{% else %}{% assign doc_title = page.title | append: " · " | append: site.title %}{% endif %}
+<title>{{ doc_title }}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ doc_title }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/images/profile.jpg' | absolute_url }}">
+<link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/images/favicon-32x32.png' | relative_url }}" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+{% feed_meta %}
+<script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</head>
+<body class="{{ page.layout }}">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="{{ '/' | relative_url }}">Xiaoyu Liang</a>
+    <nav class="topnav" aria-label="Primary">
+      {% if page.layout == "home" %}
+        <a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#writing">Writing</a>
+      {% else %}
+        <a href="{{ '/#about' | relative_url }}">About</a><a href="{{ '/#publications' | relative_url }}">Publications</a><a href="{{ '/posts/' | relative_url }}">Writing</a>
+      {% endif %}
+      <a href="{{ '/files/CV.pdf' | relative_url }}">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{ content }}
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p class="mono">© {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+      <p class="muted">Department of Computer Science, University College London · Last updated {{ site.time | date: '%b %Y' }}</p>
+    </div>
+    {% if page.layout == "home" %}
+    <div class="visitor-map" aria-label="Visitor map">
+      <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=IhoyIQHyEcUTr7dEX7BUA9Ji8T_gvYC98u1cYfAwteY&cl=ffffff&w=a"></script>
+    </div>
+    {% endif %}
+  </div>
+</footer>
+</body>
+</html>

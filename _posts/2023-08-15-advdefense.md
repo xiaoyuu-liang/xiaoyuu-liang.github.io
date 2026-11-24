@@ -1,5 +1,5 @@
 ---
-title: 'Overview of Adversarial Defenses on Image Classification'
+title: 'Slide - Overview of Adversarial Defenses on Image Classification'
 date: 2023-08-15
 permalink: /posts/2023/08/adv-defense/
 tags:

@@ -1,0 +1,9 @@
+# Newest first. `text` is Markdown.
+- date: "Nov 2026"
+  text: "🔭 New preprint: [Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs](https://arxiv.org/abs/2611.15735). Check out the [UQ Lenses project page](https://s2lab.org/UQ-Lenses/)."
+- date: "Jun 2026"
+  text: "📄 [Reading Calibrated Uncertainty from Language Model Trajectories](https://arxiv.org/abs/2605.22864) is accepted at the [Mechanistic Interpretability Workshop at ICML 2026](https://mechinterpworkshop.com/)."
+- date: "Mar 2026"
+  text: "🏛️ I am starting as an MPhil/PhD student at UCL (University College London)."
+- date: "Sep 2025"
+  text: "🏛️ I am starting as a visiting student at UCL (University College London)."

@@ -1,0 +1,10 @@
+{% assign p = include.pub %}
+<article class="entry">
+  <p class="entry__tag mono">{{ p.tag }}</p>
+  <div class="entry__body">
+    <h4 class="entry__title">{% if p.url %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h4>
+    <p class="entry__meta">{{ p.authors | join: ", " | replace: "Xiaoyu Liang", '<span class="me">Xiaoyu Liang</span>' }}</p>
+    <p class="entry__venue">{% if p.venue_url %}<a href="{{ p.venue_url }}">{{ p.venue }}</a>{% else %}{{ p.venue }}{% endif %}</p>
+    {% if p.links %}<p class="entry__links">{% for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+  </div>
+</article>

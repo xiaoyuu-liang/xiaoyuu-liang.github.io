@@ -1,0 +1,65 @@
+# Publications shown on the homepage.
+# status: preprint | published   (each group is shown in the order listed here)
+# url: where the title links to. links: extra links shown under the entry.
+# venue_url: optional link on the venue name.
+# Put your own name exactly as "Xiaoyu Liang" so it gets highlighted.
+
+- title: "Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs"
+  url: "https://arxiv.org/abs/2611.15735"
+  authors: [Xiaoyu Liang, Virginia Ceccatelli, Aliai Eusebi, Tobias Braun, Nils Loose, Carlo Malagnino, Lorenzo Cavallaro]
+  venue: "arXiv preprint"
+  tag: "arXiv 2026"
+  status: preprint
+  links:
+    - { label: "Project page", url: "https://s2lab.org/UQ-Lenses/" }
+
+- title: "SoK: Trust-Authorization Mismatch in LLM Agent Interactions"
+  url: "https://arxiv.org/abs/2512.06914"
+  authors: [Guanquan Shi, Haohua Du, Zhiqiang Wang, Xiaoyu Liang, Weiwenpei Liu, Song Bian, Zhenyu Guan]
+  venue: "arXiv preprint"
+  tag: "arXiv 2025"
+  status: preprint
+
+- title: "Reading Calibrated Uncertainty from Language Model Trajectories"
+  url: "https://arxiv.org/abs/2605.22864"
+  authors: [Aliai Eusebi, Alexander Herzog, Xiaoyu Liang, Marie Vasek, Enrico Mariconti, Lorenzo Cavallaro]
+  venue: "Mechanistic Interpretability Workshop at ICML 2026"
+  venue_url: "https://mechinterpworkshop.com/"
+  tag: "ICML-W 2026"
+  status: published
+
+- title: "CiDer: A Black-box Approach to Classify Node with Certified Robustness Guarantees"
+  url: "https://ieeexplore.ieee.org/document/11044537"
+  authors: [Xiaoyu Liang, Haohua Du, Wen Ma, Ye Tian, Xiaoya Xu]
+  venue: "IEEE International Conference on Computer Communications (INFOCOM)"
+  venue_url: "https://infocom2025.ieee-infocom.org"
+  tag: "INFOCOM 2025"
+  status: published
+  links:
+    - { label: "PDF", url: "/files/infocom2025.pdf" }
+    - { label: "Code", url: "https://github.com/xiaoyuu-liang/CiDer" }
+    - { label: "Slides", url: "/files/infocom2025-slide.pdf" }
+
+- title: "GRACED: A Plug-and-Play Solution for Certifiable Graph Classification"
+  url: "https://ieeexplore.ieee.org/document/10889569"
+  authors: [Xiaoyu Liang, Haohua Du, He Lu, Fei Shang]
+  venue: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+  venue_url: "https://2025.ieeeicassp.org"
+  tag: "ICASSP 2025"
+  status: published
+  links:
+    - { label: "PDF", url: "/files/icassp2025.pdf" }
+    - { label: "Code", url: "https://github.com/xiaoyuu-liang/GRACED" }
+    - { label: "Slides", url: "/files/icassp2025-slide.pdf" }
+    - { label: "Poster", url: "/files/icassp2025-poster.pdf" }
+
+- title: "Sedative: Pacify the Online Social Networks under Hijacking-based Troll Attacks"
+  url: "https://ieeexplore.ieee.org/document/11143275"
+  authors: [Wen Ma, Zhiyi Liu, Haohua Du, Xiaoyu Liang]
+  venue: "IEEE/ACM International Symposium on Quality of Service (IWQoS)"
+  venue_url: "https://iwqos2025.ieee-iwqos.org"
+  tag: "IWQoS 2025"
+  status: published
+  links:
+    - { label: "PDF", url: "/files/iwqos2025.pdf" }
+    - { label: "Slides", url: "/files/iwqos2025-slide.pdf" }

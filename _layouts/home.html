@@ -1,0 +1,61 @@
+---
+layout: base
+---
+<div class="shell">
+  <aside class="toc" aria-label="Contents">
+    <p class="toc__label mono">Contents</p>
+    <ol>
+      <li><a href="#about"><span class="mono">01</span>About</a></li>
+      <li><a href="#news"><span class="mono">02</span>News</a></li>
+      <li><a href="#publications"><span class="mono">03</span>Publications</a></li>
+      <li><a href="#writing"><span class="mono">04</span>Writing</a></li>
+    </ol>
+  </aside>
+
+  <div class="content">
+    <section class="hero" id="top">
+      <div class="hero__text">
+        <p class="kicker mono">UCL · S2Lab</p>
+        <h1>Xiaoyu <span class="nick">(Joy)</span> Liang</h1>
+        <p class="lead">{{ page.tagline }}</p>
+        <p class="hero__links">
+          <a href="{{ '/files/CV.pdf' | relative_url }}">CV</a>
+          <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+          <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+          <a href="{{ site.author.orcid }}">ORCID</a>
+          <a href="mailto:{{ site.author.email }}">Email</a>
+        </p>
+      </div>
+      <img class="hero__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Portrait of Xiaoyu Liang" width="200" height="200">
+    </section>
+
+    <section class="section" id="about">
+      <h2><span class="num mono">01</span>About</h2>
+      <div class="prose">{{ content }}</div>
+    </section>
+
+    <section class="section" id="news">
+      <h2><span class="num mono">02</span>News</h2>
+      <ul class="news">
+        {% for n in site.data.news %}
+        <li><span class="news__date mono">{{ n.date }}</span><span class="news__text">{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="section" id="publications">
+      <h2><span class="num mono">03</span>Publications</h2>
+      <p class="section__note">Full list on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+      <h3 class="subhead mono">Preprints</h3>
+      {% for p in site.data.publications %}{% if p.status == "preprint" %}{% include pub-item.html pub=p %}{% endif %}{% endfor %}
+      <h3 class="subhead mono">Published</h3>
+      {% for p in site.data.publications %}{% if p.status == "published" %}{% include pub-item.html pub=p %}{% endif %}{% endfor %}
+    </section>
+
+    <section class="section" id="writing">
+      <h2><span class="num mono">04</span>Writing</h2>
+      <p class="section__note">Notes and slides.</p>
+      {% for post in site.posts %}{% include post-item.html post=post %}{% endfor %}
+    </section>
+  </div>
+</div>

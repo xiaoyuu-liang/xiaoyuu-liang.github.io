@@ -1,0 +1,9 @@
+{% assign post = include.post %}
+<article class="entry">
+  <p class="entry__tag mono">{{ post.date | date: "%b %Y" }}</p>
+  <div class="entry__body">
+    <h4 class="entry__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+    <p class="entry__meta">{{ post.excerpt | strip_html | normalize_whitespace | truncate: 180 }}</p>
+    {% if post.tags.size > 0 %}<p class="entry__chips">{% for t in post.tags %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+  </div>
+</article>
