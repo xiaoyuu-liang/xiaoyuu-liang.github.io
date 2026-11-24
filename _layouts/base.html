@@ -26,14 +26,6 @@
 <header class="topbar">
   <div class="topbar__inner">
     <a class="brand" href="{{ '/' | relative_url }}">Xiaoyu Liang</a>
-    <nav class="topnav" aria-label="Primary">
-      {% if page.layout == "home" %}
-        <a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#writing">Writing</a>
-      {% else %}
-        <a href="{{ '/#about' | relative_url }}">About</a><a href="{{ '/#publications' | relative_url }}">Publications</a><a href="{{ '/posts/' | relative_url }}">Writing</a>
-      {% endif %}
-      <a href="{{ '/files/CV.pdf' | relative_url }}">CV</a>
-    </nav>
   </div>
 </header>
 
